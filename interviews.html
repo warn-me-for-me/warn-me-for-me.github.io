@@ -35,17 +35,27 @@ body, html {
 <!-- Navbar (sit on top) -->
 <div class="w3-top">
   <div class="w3-bar w3-white w3-card" id="myNavbar">
-    <a href="index.html" class="w3-bar-item w3-button">Warn Me, Is This Even For Me?</a>
+    <a href="index.html" class="w3-bar-item w3-button">WARNME, IS THIS EVEN FOR ME?</a>
     <!-- Right-sided navbar links -->
     <div class="w3-right w3-hide-small">
       <a href="clery.html" class="w3-bar-item w3-button">Clery Act</a>
-      <a href="case.html" class="w3-bar-item w3-button">Case Study</a>
-      <a href="interviews.html" class="w3-bar-item w3-button">Interviews</a>
-      <a href="nlp.html" class="w3-bar-item w3-button">NLP</a>
+      <div class="w3-dropdown-hover">
+        <a href="case.html" class="w3-button">Case Studies</a>
+        <div class="w3-dropdown-content w3-bar-block w3-card-4">
+          <a href="case.html#info" class="w3-bar-item w3-button">Info Sharing</a>
+          <a href="case.html#sentiment" class="w3-bar-item w3-button">Sentiment</a>
+        </div>
+      </div>
+      <div class="w3-dropdown-hover">
+        <a href="interviews.html" class="w3-button">Interviews</a>
+        <div class="w3-dropdown-content w3-bar-block w3-card-4">
+          <a href="interviews.html#diary" class="w3-bar-item w3-button">Diary Study</a>
+          <a href="interviews.html#exploratory" class="w3-bar-item w3-button">Exploratory Interviews</a>
+        </div>
+      </div>
       <a href="about.html" class="w3-bar-item w3-button">About</a>
     </div>
     <!-- Hide right-floated links on small screens and replace them with a menu icon -->
-
     <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
       <i class="fa fa-bars"></i>
     </a>
@@ -56,9 +66,8 @@ body, html {
 <nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large" style="display:none" id="mySidebar">
   <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close ×</a>
   <a href="clery.html" onclick="w3_close()" class="w3-bar-item w3-button">Clery Act</a>
-  <a href="case.html" onclick="w3_close()" class="w3-bar-item w3-button">Case Study</a>
+  <a href="case.html" onclick="w3_close()" class="w3-bar-item w3-button">Case Studies</a>
   <a href="interviews.html" onclick="w3_close()" class="w3-bar-item w3-button">Interviews</a>
-  <a href="nlp.html" onclick="w3_close()" class="w3-bar-item w3-button">NLP</a>
   <a href="about.html" onclick="w3_close()" class="w3-bar-item w3-button">About</a>
 </nav>
 
@@ -93,26 +102,21 @@ body, html {
   </div>
 
 <!-- Diary Study -->
-<div class="w3-container w3-light-grey" style="padding:10px 16px">
+<div class="w3-container w3-light-grey" style="padding:10px 16px" id="#diary">
   <div class="w3-row-padding">
     <h2>Diary Study</h2>
       <p>Some text.    
       </p>
-
+  </div>
 </div>
-</div>
 
-<!-- Service Map -->
-<div class="w3-container w3-light-grey" style="padding:10px 16px">
+<!-- Exploratory Interviews -->
+<div class="w3-container w3-light-grey" style="padding:10px 16px" id="#exploratory">
   <div class="w3-row-padding">
-    <h2>Service Map</h2>
+    <h2>Exploratory Interviews</h2>
       <p>Some text.  
       </p>
-
-<p>Some text.    
-</p>  
-
-</div>
+  </div>
 </div>
 
 <!-- Footer -->
