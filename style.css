@@ -218,11 +218,6 @@ figcaption {
 }
 
 /* Buttons */
-.w3-button {
-    font-family: 'Source Sans Pro', sans-serif;
-    font-weight: 300; /* Light */
-    /* Other existing styles for w3-button */
-  }
 
 .dark-button {
     background-color: var(--color-black);
@@ -266,6 +261,8 @@ figcaption {
     color: var(--color-black);
     display: inline-block;
     padding: 0.7em;
+    font-size: 18px; /* Increased from 16px to 18px */
+    font-weight: 300; /* Light */
 }
 
 .main-nav a:hover
