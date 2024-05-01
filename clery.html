@@ -5,6 +5,7 @@
 <meta name="description" content="A Mixed-Methods MIMS 24 Capstone Project.">
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="style.css">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -69,10 +70,16 @@ body, html {
 <div class="w3-container w3-light-grey" style="padding: 100px 16px 10px 16px" >
   <div class="w3-row-padding">
     <h1>Clery Act</h1>
-      <p>The Jeanne Clery Disclosure of Campus Security Policy and Campus Crime Statistics Act (20 U.S.C. § 1092) was signed in 1990 after Jeanne Clery was raped and murdered on the Lehigh University campus. The Act mandated disclosure of campus crime statistics and was built on a philosophy that, had Jeanne Clery and her parents known the LU crime statistics, she would have gone to a different school. As stated in a program review by the Department of Education: the Clery Act is “based on the premise that students and employees are entitled to accurate and honest information about the realities of crime and other threats to their personal safety and the security of their property [1].” This legislation reflects a particular political moment as does it embed ideas about crime rates and crime prevention, etc.   
+      <p>
+        The Jeanne Clery Disclosure of Campus Security Policy and Campus Crime Statistics Act (20 U.S.C. § 1092) was signed in 1990 after Jeanne Clery was raped and murdered on the Lehigh University campus. The Act mandated disclosure of campus crime statistics and was built on a philosophy that, had Jeanne Clery and her parents known the LU crime statistics, she would have gone to a different school. As stated in a program review by the Department of Education: the Clery Act is “based on the premise that students and employees are entitled to accurate and honest information about the realities of crime and other threats to their personal safety and the security of their property [1].” This legislation reflects a particular political moment as does it embed ideas about crime rates and crime prevention, etc.  
       </p>
-      <p>Over the last 30+ years, little empirical data has been gathered regarding the effectiveness of the Act. One particular area of interest to our project is the student perceptions of the emergency notifications that UC Berkeley sends out in part in order to comply with a 2007 update to the Clery Act which was motivated by the Virginia Tech shooting. 
+      <p>
+        Over the last 30+ years, little empirical data has been gathered regarding the effectiveness of the Act. One particular area of interest to our project is the student perceptions of the emergency notifications that UC Berkeley sends out in part in order to comply with a 2007 update to the Clery Act which was motivated by the Virginia Tech shooting. Additionally, in September 2020, UC Berkeley was fined by the Department of Education 1.35 million for violating Clery including “failure to issue emergency notifications” and “failure to issue timely warnings in accordance with federal regulations” [1].  
       </p>
+      <p>
+        All information regarding the Clery Act has been compiled by UC Berkeley students for members of the UC Berkeley community and those wishing to understand and analyze how Clery is enacted within their communities in hopes that the more we understand how and why these systems succeed and fail the more we can improve them and keep our community safe. 
+      </p>
+
 <!-- Clery Geography -->
     <h3>Clery Geography</h3>
       <p>Each public university within the scope of the Clery Act has 4 categories of geography: on-campus, on-campus student housing, off campus, and public property. When we spoke to Abigail Ogden, Director of Clery Compliance at UC Berkeley, she noted the fuzzy boundaries on the map and that notifications will often be sent for incidents within and also just beyond the boundaries of Clery Geography. 
@@ -81,17 +88,17 @@ body, html {
       </p>
 <!-- Clery Crimes -->
     <h3>Clery Crimes</h3>
-      <p>Primary Crimes</p>
-      <p>Violence Against Women Act (2013)</p>
-      <p>Hate Crimes</p>
-      <p>Liquor, Drug, and Weapon Arrests and Referrals</p>
+      <p>
+        The Clery Act requires universities to report statistics annually on crimes that are violent crimes, Violence Against Women Act (2013) offenses, hate crimes, and liquor, drug, and weapon arrests and referrals. What is unclear is the relationship between reported or suspected crimes and those found to be actual crimes within a court of law. 
+      </p>
     </div>
   </div>
 <!-- WarnMes -->
 <div class="w3-container" style="padding: 10px 16px 10px 16px" >
   <div class="w3-row-padding">
     <h1>Clery @ UCB: WarnMe</h1>
-      <p>UC Berkeley has an emergency notification system that consists of various parts including sirens, PA systems, UC Berkeley WarnMe, etc. The Everbridge mass notification system for UC Berkeley is branded as UC Berkeley WarnMe. Each message that is sent out is one of the following types: a timely notification, an emergency notification, or a community advisory. Each message type has its own protocol, notification method (email and text, or just email), and associated templates. Templates have varying levels of information and required components within the Clery Act.  </p>
+      <p>UC Berkeley has an emergency notification system that consists of various parts including sirens, PA systems, UC Berkeley WarnMe, etc. 
+      </p>
 
 <!-- Emergency Notifications -->
     <h3>Emergency Notifications</h3>
@@ -100,10 +107,18 @@ body, html {
 <!-- Timely Warnings -->
     <h3>Timely Warnings</h3>
       <p>Unlikely emergency notifications, timely warnings are those aimed at prevention.</p>
+      <p><u>UCB Timely Warning Criteria</u></p>
+      <p>"A timely warning will be sent by the university when all of the criteria below have been met:</p>
+      <ol>
+        <li>A crime is reported to UCPD or a CSA;</li>
+        <li>The crime is a Clery Act crime;</li>
+        <li>The crime is reported to have occurred on the Clery Act geography of the university; and</li>
+        <li>The crime is considered by the institution to present a serious or ongoing threat to students and employees."</li>
+      </ol>
 
 <!-- Community Advisories -->
     <h3>Community Advisories</h3>
-      <p>Add small note about these: that they are at the discretion of the college and are not subject to any clery review.</p>
+      <p>Unlike emergency notifications and timely warnings, community advisories are not mandated by the Clery Act and as such can be released at the discretion of the university and UCPD.</p>
     </div>
   </div>
 
@@ -111,11 +126,49 @@ body, html {
 <div class="w3-container w3-light-grey" style="padding: 10px 16px 10px 16px" >
   <div class="w3-row-padding">
     <h1>Coding WarnMes</h1>
-      <p>Describe the code party. </p>
-      <p>You can find the code for this project on <a href="https://github.com/warn-me-for-me/coding-warnme">GitHub</a>.</p>
-
-    </div>
+      <p>The project collected 2 years of WarnMe messages via public records requests and 4 annotators coded the messages along the lines of location granularity, scene descriptions, and personal identifiers used within the context of victims and suspects. We then calculated Fleiss' kappa, a statistical measure for assessing the reliability of agreement between multiple annotators, selected the highest agreement codes for each WarnMe, and analyzed the frequency of the various codes. 
+      </p>
+      <p> 
+        The inter-annotator agreement (a weighted average of Fleiss’ kappa) across the location, description, and personal identifier codes was 0.4828. The range of IAA values was 0.4472 for location to 0.6055 for subject’s personal identifier. This range and the average across all the categories shows moderate agreement between the annotators as Fleiss’ kappa spans from -1 to 1. 
+      </p>
+      <p>
+        Additionally, we performed some exploratory analysis on the WarnMes using the highest agreement codes for each message. One interesting finding was that about half of the messages were coded as referring to the location-based subject of the message as something other than a specific address or named place.  
+      </p>
+      <table> 
+        <tr>
+          <th>Location Granularity</th>
+          <th>Count</th>
+        </tr>
+        <tr>
+          <td>Address / Specific Named</td>
+          <td>143</td>
+        </tr>
+        <tr>
+          <td>Radius / Area</td>
+          <td>58</td>
+        </tr>
+        <tr>
+          <td>All campus</td>
+          <td>46</td>
+        </tr>
+        <tr>
+          <td>Block</td>
+          <td>36</td>
+        </tr>
+        <tr>
+          <td>Intersection</td>
+          <td>25</td>
+        </tr>
+        <tr>
+          <td>Digital / Telephone</td>
+          <td>2</td>
+        </tr>
+      </table>
+    <p>The lack of location specificity in many of the messages speaks to the need for increased transparency and accuracy of reporting in these messages.</p>
+    <p>You can find the code for this project on <a href="https://github.com/warn-me-for-me/coding-warnme"><u>GitHub</u></a>.</p>
   </div>
+  </div>
+
 
   
 <!-- Footer -->
@@ -125,7 +178,7 @@ body, html {
       <i class="fa fa-github" aria-hidden="true"></i>
     </a>
     <a href="https://www.ischool.berkeley.edu/projects/2024/warnme-even-me" target="_blank" rel="noopener noreferrer">
-      <i class="fa fa-graduation-cap" aria-hidden="true"></i>
+      <i class="fa fa-bold" aria-hidden="true"></i>
     </a>
   </div>
   <p>
