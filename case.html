@@ -219,7 +219,7 @@ body, html {
 <div class="w3-container w3" style="padding: 10px 16px 10px 16px" id="#sentiment">
   <div class="w3-row-padding">
     <h2>Sentiment Analysis</h2>
-    <p>WarnMe-related posts on the r/berkeley subreddit were manually classified with +/- sentiment as well as emotion (joy, love, anger, sadness, fear & surprise). A BERT-based model was then trained to classify the emotion and sentiment of the messages.</p>
+    <p>WarnMe-related posts on the r/berkeley subreddit were manually annotated with +/- sentiment as well as emotion (joy, love, anger, sadness, fear & surprise) labels. A BERT-based model was then trained to classify the emotion and sentiment of the messages. The model achieved 80.65% accuracy, excelling in identifying sadness and anger but struggled with surprise and love. This indicates that there is room for improvement in recognizing less frequent or subtly expressed emotions.</p>
     <p><strong>Issues/User Needs + Solutions and Recommendations</strong></p>
     <ul>
       <li><strong>Prevalence of Negative Emotions:</strong> There was a significant presence of negative emotions such as fear and anger in response to WarnMe alerts, highlighting areas where communication could be adjusted to provide reassurance and more detailed safety tips to alleviate community concerns.</li>
