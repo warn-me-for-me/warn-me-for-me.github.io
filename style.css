@@ -27,10 +27,28 @@ Text
          1px  1px 0 #d487f8; /* Outline effect */
 }
 
+/*.text-outline2 {
+    color: #500a73; /* Text color */
+  /*  font-weight: 600; 
+} */
+
 .text-outline2 {
     color: #500a73; /* Text color */
-    font-weight: 600; 
+    font-weight: 600;
+    position: relative;
 }
+
+.text-outline2::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.5); /* Solid bar color with transparency */
+    z-index: -1;
+}
+
 
 .body {
     font-family: 'Source Sans Pro', sans-serif;
