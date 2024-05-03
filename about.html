@@ -97,7 +97,20 @@ body, html {
       <h3>Coding WarnMes and Natural Language Processing</h3>
       <p>The project involved analyzing WarnMe messages collected from August 2021 to October 2023 through public records requests. A codebook was developed to code the messages based on multiple categories of codes: location granularity, scene descriptions, and personal identifiers used for victims and suspects.</p>
       <p>Four annotators each coded 200 of the 315 messages with all four annotators coding 100 of the messages. From those 100 messages Fleiss' kappa, a statistical measure for assessing the reliability of agreement between multiple annotators, was calculated. The inter-annotator agreement across all code categories showed moderate agreement between the annotators: a weighted average Fleiss' kappa of 0.4828. The codes with the highest agreement were selected for each WarnMe, and the frequency of the various code categories were analyzed.</p>   
-      </div>
+      <br> 
+      <p>The NLP analysis began with data preprocessing to refine the dataset by removing URLs, non-standard characters, and excess whitespace. A sentiment analysis pipeline was then implemented using the <code>sentiment-analysis</code> module from Hugging Face, categorizing each comment as positive or negative, and results were documented in the dataset.</p>
+      <p>We manually annotated the entire data the human way based on six emotions (joy, love, anger, sadness, fear, and surprise) which provided a baseline to evaluate the model's performance. A pre-trained model (<code>bhadresh-savani/distilbert-base-uncased-emotion</code>) from Hugging Face was employed to analyze emotions in the comments. The model achieved 80.65% accuracy, excelling in identifying sadness and anger but struggled with surprise and love. This indicates that there is room for improvement in recognizing less frequent or subtly expressed emotions.</p>
+      <p>To enhance sentiment analysis, three machine learning models were tested:</p>
+      <ul>
+          <li>Naive Bayes Classifier with TfidfVectorizer: This model showed limited success due to its simplicity.</li>
+          <li>Support Vector Machine (SVM) with TfidfVectorizer: This model performed slightly better but still struggled with the subtleties of emotional content.</li>
+          <li>Neural Network with GloVe Embeddings: This model, which incorporates LSTM layers and dropout layers, demonstrated a significant improvement in capturing complex emotional sentiments, validated through rigorous hyperparameter tuning and early stopping measures.</li>
+      </ul>
+      <p>The study underscores NLP technologies' evolving complexity and capability in automated emotion detection from text data, highlighting the potential for more accurate and nuanced sentiment analysis in future research.</p>
+  
+    
+    
+    </div>
 </div>
 
 <!-- Positionality Statement -->
